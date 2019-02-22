@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>켠김에 왕까지</title>
+    <style>
+      *{
+    box-sizing:border-box;
+          }
+      ul{
+        list-style-type:none;
+        display:block;
+      }
+      a{
+        text-decoration:none;
+      }
+      a:visited{
+        color:inherit;
+      }
+      body{
+        margin:0px;
+        padding:0px;
+      }
+      #container{
+        margin:auto;
+        height:auto;
+        padding:0px;
+        width:1500px;
+      }
+      #banner{
+        width:1500px;
+        height:600px;
+      }
+      #backimg{
+        width:1500px;
+        height:600px;
+        background-image:url("kitten.jpg");
+      }
+      #toplogo{
+        float:left;
+        font-size:22px;
+        color:white;
+      }
+      #topright{
+        float:right;
+        font-size:22px;
+        color:white;
+      }
+      #topmenutext{
+        text-align:center;
+      }
+      #topmenu{
+        display:inline-block;
+      }
+      #topmenu li{
+        float:left;
+        display:inline-block;
+      }
+      #topmenu ul{
+        padding:0px;
+      }
+      #topmenu a{
+        height:50px;
+        line-height:50px;
+        padding:0 35px;
+        display:block;
+        color:white;
+        font-size:22px;
+      }
+      #topmenu .submenu {
+        display:none;
+        position:absolute
+      }
+      #topmenu .submenu li {
+      display:inline;
+      float:none;
+      }
+      #topmenu .submenu a{
+        height:40px;
+        line-height:40px;
+        padding:0 17px;
+        display:block;
+        color:#FE9A2E;
+        font-size:20px;
+        background-color:white;
+        overflow:hidden;
+      }
+      #topmenu a:hover{
+        background-color:#ccc;
+      }
+      #topmenu ul li:hover ul {
+
+      }
+      #ndcontainer{
+        width:1500px;
+        height:700px;
+        background-color:white;
+      }
+      #ndinner{
+        width:1400px;
+        height:700px;
+        margin-left:50px;
+        margin-right:50px;
+        padding-top:100px;
+        text-align:center;
+      }
+      #ndinner span{
+        font-size:40px;
+      }
+      #ndinner p{
+        font-size:10px;
+      }
+      #ndlist ul li{
+        float:left;
+      }
+      #picinner{
+        width:250px;
+        height:400px;
+        margin:10px;
+        margin-right:40px;
+        margin-left:40px;
+      }
+      #picinner img{
+        margin:20px;
+        width:200px;
+        height:200px;
+      }
+      #picinner p{
+        font-size:30px;
+      }
+      #picinner span{
+        display:none;
+        color:black;
+        font-size:20px;
+        z-index:3;
+      }
+      #rdcontainer{
+        width:1500px;
+        height:600px;
+        background-image:url("kitten.jpg");
+      }
+      #rightimage{
+        width:750px;
+        height:600px;
+        background-color:rgba( 190, 190, 190, 0.5 );
+        text-align:center;
+      }
+      #rightimage span{
+        font-size:40px;
+      }
+      #rightimage p{
+        font-size:20px;
+      }
+      #center{
+        padding-top:100px;
+      }
+
+
+      </style>
+    <!-- style -->
+  </head>
+  <!-- banner -->
+  <body>
+<div id ="container">
+  <div id = "banner">
+    <div id="backimg">
+      <div id ="topmenutext">
+        <div id="toplogo">
+          LOGO
+          </div>
+          <div id="topright">
+            FACEBOOK
+            </div>
+            <!--menu-->
+      <div id ="topmenu">
+        <ul>
+          <li><a href="#">ho</a></li>
+          <li class="dropdown"><a href="#">dong</a>
+  <ul class="submenu">
+<li><a href="#">sub menu 1</a></li>
+<li><a href="#">Sub Menu 2</a></li>
+<li><a href="#">Sub Menu 3</a></li>
+  </ul></li>
+          <li class="dropdown"><a href="#">sang</a>
+  <ul class="submenu">
+<li><a href="#">sub menu 1</a></li>
+<li><a href="#">Sub Menu 2</a></li>
+<li><a href="#">Sub Menu 3</a></li>
+  </ul></li>
+<li class="dropdown"><a href="#">hou</a>
+  <ul class="submenu">
+<li><a href="#">sub menu 1</a></li>
+<li><a href="#">Sub Menu 2</a></li>
+<li><a href="#">Sub Menu 3</a></li>
+  </ul></li>
+          </ul>
+        </div>
+        <!--menu-->
+      </div>
+    </div>
+  </div>
+  <!--2nd container-->
+  <div id = "ndcontainer">
+    <div id = "ndinner">
+      <span>ㅈㄴ 힘 듭 닏 다</span>
+      <p>이 남자는 무료로 공부합니다</P>
+        <div id ="ndlist">
+          <ul>
+            <li class ="libox"><div id="picinner"><img src ="kitten.jpg"><span>Helo</span><p>sibal</p></div></li>
+              <li class ="libox"><div id="picinner"><img src ="kitten.jpg"><span>Helo</span><p>sibal</p> </div></li>
+                <li class ="libox"><div id="picinner"><img src ="#"><p>sibal</p> </div></li>
+                  <li class ="libox"><div id="picinner"><img src ="#"><p>sibal</p> </div></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <!--3rd container-->
+    <div id ="rdcontainer">
+      <div id="rightimage">
+        <div id="center">
+        <span>재미는 있는데요</span>
+        <p>살려주세요 시발 제발</p>
+        </div>
+        </div>
+      </div>
+</div>
+
+
+
+<!--script-->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.0.min.js" ></script>
+<script>
+$(function(){
+$('#topmenutext').mouseenter(function(){
+  $('#topmenutext').css('background-color','white').css('transition-duration','0.2s')
+  $('#topmenu a').css('color','black')
+  $('#toplogo').css('color','black')
+  $('#topright').css('color','black')
+});
+$('#topmenutext').mouseleave(function(){
+  $('#topmenutext').css('background-color','transparent').css('transition-duration','0.2s')
+  $('#topmenu a').css('color','white')
+  $('#topright').css('color','white')
+  $('#toplogo').css('color','white')
+});
+$('.libox').mouseenter(function(){
+  $('.libox img').css("opacity", "0.3").css('transition-duration','0.2s')
+  $('.libox span').css('display','inline').css('transition-duration','0.2s')
+});
+$('.libox').mouseleave(function(){
+  $('.libox img').css("opacity", "1").css('transition-duration','0.2s')
+  $('.libox span').css('display','none').css('transition-duration','0.2s')
+});
+
+});
+</script>
+<!--$('.dropdown').mouseenter(function(){
+$('.submenu').slideDown(200)
+}); 진짜 해결이 안되냐 ㅁ임ㄹ얼낭러망ㅁ바 -->
+
+<!-- jquery bootstrap -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.0.min.js" ></script>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  </body>
+</html>
