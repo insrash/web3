@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <title>켠김에 왕까지</title>
     <style>
+    figure{
+      overflow:hidden;
+      margin:0px;
+      padding:0px;
+    }
       *{
     box-sizing:border-box;
           }
@@ -137,22 +142,95 @@
       #rdcontainer{
         width:1500px;
         height:600px;
-        background-image:url("kitten.jpg");
-      }
-      #rightimage{
-        width:750px;
+        position:relative;
+    }
+      #rdcontainer img{
+        width:1500px;
         height:600px;
-        background-color:rgba( 190, 190, 190, 0.5 );
+      }
+      #rdcontainer figure img{
+        -webkit-transform: scale(1);
+	      transform: scale(1);
+	      -webkit-transition: .3s ease-in-out;
+      	transition: .3s ease-in-out;
+      }
+      #rdcontainer figure img:hover {
+      	-webkit-transform: scale(1.1);
+      	transform: scale(1.1);
+      }
+      #rdcontainer a{
+      	background-color:rgba( 250, 250, 250, 0.7  );
+      	text-align: center;
+        line-height:100%;
+        vertical-align:middle;
+      	position: absolute;
+      	top: 0px;
+      	left:0px;
+        height:100%;
+        width:25%;
+            }
+      #rdcontainer span{
+        font-size:80px;
+        position:absolute;
+        top:50%;
+        left:12.5%;
+      }
+      #ltcontainer{
+        margin-top:10px;
+        width:1500px;
+        height:600px;
+        position:relative;
+    }
+      #ltcontainer img{
+        width:1500px;
+        height:600px;
+      }
+      #ltcontainer figure img{
+        -webkit-transform: scale(1);
+	      transform: scale(1);
+	      -webkit-transition: .3s ease-in-out;
+      	transition: .3s ease-in-out;
+      }
+      #ltcontainer figure img:hover {
+      	-webkit-transform: scale(1.1);
+      	transform: scale(1.1);
+      }
+      #ltcontainer a{
+      	background-color:rgba( 250, 250, 250, 0.7  );
+      	text-align: center;
+        line-height:100%;
+        vertical-align:middle;
+      	position: absolute;
+      	top: 0px;
+      	right:0px;
+        height:100%;
+        width:25%;
+            }
+      #ltcontainer span{
+        font-size:60px;
+        position:absolute;
+        top:50%;
+        right:12.5%;
+      }
+      #forcontainer{
+        margin-top:30px;
+        width:1500px;
+        height:600px;
         text-align:center;
+        background-image:url("pillow.jpg")
       }
-      #rightimage span{
-        font-size:40px;
+      #fortext{
+        padding-top:150px;
       }
-      #rightimage p{
-        font-size:20px;
+      #forcontainer span{
+        font-size:80px;
       }
-      #center{
-        padding-top:100px;
+      #container .lyric{
+        font-size:15px;
+        padding:0 60px;
+      }
+      #container p{
+        font-size:30px;
       }
 
 
@@ -206,24 +284,50 @@
       <p>이 남자는 무료로 공부합니다</P>
         <div id ="ndlist">
           <ul>
-            <li class ="libox"><div id="picinner"><img src ="kitten.jpg"><span>Helo</span><p>sibal</p></div></li>
-              <li class ="libox"><div id="picinner"><img src ="kitten.jpg"><span>Helo</span><p>sibal</p> </div></li>
-                <li class ="libox"><div id="picinner"><img src ="#"><p>sibal</p> </div></li>
-                  <li class ="libox"><div id="picinner"><img src ="#"><p>sibal</p> </div></li>
+            <li class ="libox"><div id="picinner"><img src ="kitten.jpg" class="pic1"><p>sibal</p></div></li>
+              <li class ="libox"><div id="picinner"><img src  ="kitten.jpg" class="pic2"><p>sibal</p> </div></li>
+                <li class ="libox"><div id="picinner"><img src ="kitten.jpg" class="pic3"><p>sibal</p> </div></li>
+                  <li class ="libox"><div id="picinner"><img src ="kitten.jpg" class="pic4"><p>sibal</p> </div></li>
             </ul>
           </div>
       </div>
     </div>
     <!--3rd container-->
     <div id ="rdcontainer">
-      <div id="rightimage">
-        <div id="center">
-        <span>재미는 있는데요</span>
-        <p>살려주세요 시발 제발</p>
-        </div>
-        </div>
+    <figure><img src ="snow.jpg"><a href="#"><span>개 신 기</span></a></figure>
       </div>
-</div>
+      <div id ="ltcontainer">
+      <figure><img src ="tea.jpg"><a href="#"><span>동 방 신 기</span></a></figure>
+        </div>
+        <div id ="forcontainer">
+          <div id="fortext">
+          <span>새로운 이미지를 구했습니다</span>
+          <p>배경이 좀 어둡게 불투명해지면 이쁠거 같습니다</p>
+          <p class="lyric">그토록 이루고 싶어하던 게 뭐였지 다 부실듯한 표정으로
+덤볐네 겁없이
+근데 처음 다쳐보고서는
+언제 떨어질지를
+걱정하기 시작했네
+행복의 언저리에
+걸쳐 있다 여기며
+밀어붙였네 점점
+시간은 빨리 흐르는 듯해
+내 손엔 목적지가
+표시안된 지도 뿐
+한없이 넓게 보였지
+내 걷는 속도론
+닿지 못할 곳에 놓여진게
+내가 찾는 보물일까
+보물이란건 있나
+흘러가면 잡지못할 시간
+누구 말 마따나
+어릴때나 쫓는 가치인가
+아무도 정확히 나에게
+가르쳐 주지않네
+걷는 수 밖에
+</p>
+        </div>
+        </div>
 
 
 
@@ -244,14 +348,31 @@ $('#topmenutext').mouseleave(function(){
   $('#topright').css('color','white')
   $('#toplogo').css('color','white')
 });
-$('.libox').mouseenter(function(){
-  $('.libox img').css("opacity", "0.3").css('transition-duration','0.2s')
-  $('.libox span').css('display','inline').css('transition-duration','0.2s')
+$('.pic1').mouseenter(function(){
+  $('.pic1').css("opacity", "0.3").css('transition-duration','0.2s')
 });
-$('.libox').mouseleave(function(){
-  $('.libox img').css("opacity", "1").css('transition-duration','0.2s')
-  $('.libox span').css('display','none').css('transition-duration','0.2s')
+$('.pic1').mouseleave(function(){
+  $('.pic1').css("opacity", "1").css('transition-duration','0.2s')
 });
+$('.pic2').mouseenter(function(){
+  $('.pic2').css("opacity", "0.3").css('transition-duration','0.2s')
+});
+$('.pic2').mouseleave(function(){
+  $('.pic2').css("opacity", "1").css('transition-duration','0.2s')
+});
+$('.pic3').mouseenter(function(){
+  $('.pic3').css("opacity", "0.3").css('transition-duration','0.2s')
+});
+$('.pic3').mouseleave(function(){
+  $('.pic3').css("opacity", "1").css('transition-duration','0.2s')
+});
+$('.pic4').mouseenter(function(){
+  $('.pic4').css("opacity", "0.3").css('transition-duration','0.2s')
+});
+$('.pic4').mouseleave(function(){
+  $('.pic4').css("opacity", "1").css('transition-duration','0.2s')
+});
+
 
 });
 </script>
